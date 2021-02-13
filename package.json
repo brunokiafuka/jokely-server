@@ -1,0 +1,30 @@
+{
+  "name": "@jokely/server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "prod:serve": "node dist/server.js",
+    "start": "npm run build && npm run prod:serve"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.11",
+    "@types/node-fetch": "^2.5.8",
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.27",
+    "typescript": "^4.1.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "node-fetch": "^2.6.1"
+  },
+  "author": "brunokiafuka <brunokiafuka@live.com.pt>",
+  "repository": "https://github.com/brunokiafuka/jokely-server.git"
+}
